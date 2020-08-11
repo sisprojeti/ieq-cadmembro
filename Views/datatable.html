@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Sua Página</title>
+
+  <link href="//cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css" rel="stylesheet">
+
+</head>
+<body>
+  
+  <table id="table_id" class="display"><font></font>
+    <thead><font></font>
+        <tr><font></font>
+            <th>Column 1</th><font></font>
+            <th>Column 2</th><font></font>
+        </tr><font></font>
+    </thead><font></font>
+    <tbody><font></font>
+        <tr><font></font>
+            <td>Row 1 Data 1</td><font></font>
+            <td>Row 1 Data 2</td><font></font>
+        </tr><font></font>
+        <tr><font></font>
+            <td>Row 2 Data 1</td><font></font>
+            <td>Row 2 Data 2</td><font></font>
+        </tr><font></font>
+    </tbody><font></font>
+</table><font></font>
+  
+  <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="//cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+
+  <script>
+  $(document).ready(function(){
+      $('#table_id').DataTable({
+        	"language": {
+                "lengthMenu": "Mostrando _MENU_ registros por página",
+                "zeroRecords": "Nada encontrado",
+                "info": "Mostrando página _PAGE_ de _PAGES_",
+                "infoEmpty": "Nenhum registro disponível",
+                "infoFiltered": "(filtrado de _MAX_ registros no total)"
+            }
+        });
+  });
+  </script>
+  
+</body>
+</html>
